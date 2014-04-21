@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://wavescholar.github.io/sitemap.xml 

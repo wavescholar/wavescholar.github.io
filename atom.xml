@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Aloidia Analytics]]></title>
+  <link href="http://wavescholar.github.io/atom.xml" rel="self"/>
+  <link href="http://wavescholar.github.io/"/>
+  <updated>2014-04-21T01:15:19+00:00</updated>
+  <id>http://wavescholar.github.io/</id>
+  <author>
+    <name><![CDATA[Bruce Campbell]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Testing MathJax]]></title>
+    <link href="http://wavescholar.github.io/blog/2014/03/09/testing-mathjax/"/>
+    <updated>2014-03-09T23:44:50+00:00</updated>
+    <id>http://wavescholar.github.io/blog/2014/03/09/testing-mathjax</id>
+    <content type="html"><![CDATA[<p>Spectral Geometry concerns itself with the relationships between a geometric structure and the spectra of a
+differential operator, typically the Laplacian.   Inferring the geometry from the spectra is a type of inverse
+problem since two non isometric manifolds may share the same spectra.  Going the other way, we encounter
+isoperimetric inequalities and spectral gap theorems.  “Can One Hear the Shape of a Drum?” was the of an article
+ by Mark Kac in the American Mathematical Monthly 1966.   The frequencies at which a drum vibrate depends on its shape.
+ The elliptic PDE  <script type="math/tex"> \nabla^2 A + k A = 0</script> tells us the frequencies if we know the shape.
+ These frequencies are the eigenvalues of the Laplacian in the region.
+ Can the spectrum of the Laplacian  tell us the shape if we know the frequencies?  Hermann Weyl showed the eigenvalues
+ of the Laplacian in the compact domain <script type="math/tex">\Omega</script> are distributed according to</p>
+
+<script type="math/tex; mode=display"> N(\lambda) \sim (2 \pi)^{-d) \omega_d \lambda^{\frac{d}{2}} vol(\Omega}</script>
+
+<p>The Laplace Beltrami operator is the generalization of
+ <script type="math/tex">\nabla \circ \nabla = \Delta</script> to <script type="math/tex">\mathcal{M}</script></p>
+
+<script type="math/tex; mode=display">\Delta f = tr(H(f))</script>
+
+<p>In the exterior calculus we have <script type="math/tex"> \Delta f = d^*d \; f</script>.</p>
+
+<p>The Laplacian of a Gaussian has well known applications in image processing.
+Given <script type="math/tex">f(x,y)</script>, we get a scale space representation when we convolve by</p>
+
+<script type="math/tex; mode=display">g(x,y,t) = \frac{e^{x^2+y^2}}{2 \pi t}</script>
+
+<script type="math/tex; mode=display">L(x,y,t) =g(x,y,t) \ast f(x,y)</script>
+
+<p>Applying <script type="math/tex">\Delta</script> to <script type="math/tex">L(x,y,t)</script> gives response to blobs of extent <script type="math/tex">\sqrt{t}</script></p>
+
+<p>There is a well known connection between diffusion processes and Schrodinger operators;</p>
+
+<script type="math/tex; mode=display"> H = \nabla^2 + V(x) \Phi \in L^2(R^n) </script>
+
+<script type="math/tex; mode=display">H \Phi = E \Phi </script>
+
+<script type="math/tex; mode=display">E = \sigma(H) </script>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Test Code Embedding]]></title>
+    <link href="http://wavescholar.github.io/blog/2014/03/09/test-code-embedding/"/>
+    <updated>2014-03-09T23:22:44+00:00</updated>
+    <id>http://wavescholar.github.io/blog/2014/03/09/test-code-embedding</id>
+    <content type="html"><![CDATA[<p>A code snippet from klMatrix</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+<span class="line-number">28</span>
+<span class="line-number">29</span>
+<span class="line-number">30</span>
+<span class="line-number">31</span>
+<span class="line-number">32</span>
+<span class="line-number">33</span>
+<span class="line-number">34</span>
+<span class="line-number">35</span>
+<span class="line-number">36</span>
+<span class="line-number">37</span>
+<span class="line-number">38</span>
+<span class="line-number">39</span>
+<span class="line-number">40</span>
+<span class="line-number">41</span>
+<span class="line-number">42</span>
+<span class="line-number">43</span>
+<span class="line-number">44</span>
+<span class="line-number">45</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">template &lt;class TYPE&gt; class klMulticlassSVMTrain : public klSamplePopulation&lt;TYPE&gt;
+</span><span class="line">{
+</span><span class="line">public:
+</span><span class="line">    //These are the outputs of the training operation
+</span><span class="line">    klVector&lt;TYPE&gt; _lagMults;
+</span><span class="line">    klVector&lt;TYPE&gt; _intercepts;
+</span><span class="line">    klMatrix&lt;TYPE&gt; _supportPoints;
+</span><span class="line">    klVector&lt;int&gt;  _supportClasses;
+</span><span class="line">
+</span><span class="line">
+</span><span class="line">    //Inputs of the training operation
+</span><span class="line">    klVector&lt;int&gt; _trainingClasses;
+</span><span class="line">
+</span><span class="line">    //	  nu                - fraction of the distribution to exclude - called
+</span><span class="line">    //                     "outlierFraction" in much of the rest of the SVM code
+</span><span class="line">    //						p x 1 array of desired fraction of outliers, one for each of p classes.
+</span><span class="line">    klVector&lt;TYPE&gt; _outlierFraction;
+</span><span class="line">
+</span><span class="line">    //  mixingCoeff =0.5 is a good place to start
+</span><span class="line">    TYPE _mixingCoeff;
+</span><span class="line">
+</span><span class="line">    unsigned int _numClasses;
+</span><span class="line">
+</span><span class="line">    //	double smoThresh=1/10,000; is the  tolerance for SMO algorithm
+</span><span class="line">    TYPE _smoThresh;
+</span><span class="line">
+</span><span class="line">
+</span><span class="line">    //The width of RBF kernel.
+</span><span class="line">    double _sigma;
+</span><span class="line">
+</span><span class="line">    TYPE RadialBasisFunctionKernel(TYPE* x, TYPE* y) 
+</span><span class="line">    {
+</span><span class="line">        unsigned int     n;
+</span><span class="line">        TYPE  sum, d;
+</span><span class="line">
+</span><span class="line">        sum = 0;
+</span><span class="line">        for(n = 0; n &lt;getColumns(); n++)
+</span><span class="line">        {
+</span><span class="line">            d = x[n] - y[n];
+</span><span class="line">            sum += d * d;
+</span><span class="line">        }
+</span><span class="line">
+</span><span class="line">        return(std::exp(-   sum /(2.0 * _sigma * _sigma)) );  
+</span><span class="line">    }
+</span><span class="line"> ...</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Testing GistPlugin]]></title>
+    <link href="http://wavescholar.github.io/blog/2014/03/09/testing-gistplugin/"/>
+    <updated>2014-03-09T23:15:07+00:00</updated>
+    <id>http://wavescholar.github.io/blog/2014/03/09/testing-gistplugin</id>
+    <content type="html"><![CDATA[<p>This is a gist of instruction to host doxygen generated code documentation to githubs gh-pages web hosting. </p>
+<div><script src="https://gist.github.com/d7a6791ac1933fbd7f1d.js"></script>
+<noscript><pre><code>Example Doxygen Content http://wavescholar.github.io/klMatrixCore/ 
+
+Create your project in GitHub. 
+Go to the admin pages and enable gh-pages for your project. 
+You will need the gh-pages branch created by GitHub, and whatever initialization it does.
+
+
+# Make your gitHub project. mkdir project
+cd project/
+git init
+echo &quot;# Project README file&quot; &gt; README.markdown
+git add .
+git commit -m &quot;Project README added&quot;
+git remote add origin git@github.com:[user]/[repo].git
+git push origin master # Make a new html directory, and tell git to ignore it. mkdir html
+echo &quot;html/&quot; &gt; .gitignore
+git add .
+git commit -m &quot;.gitignore html/ folder (contains gh-pages branch)&quot;
+git push origin master # Clone the whole project (master+gh-branch) into a new subdirectorycd html/
+git clone git@github.com:[user]/[repo].git .
+git checkout origin/gh-pages -b gh-pages
+ls -la# Ignore the warning. Get rid of master, leaving gh-branches.
+git branch -d master
+ # You are now on the gh-pages branch.# You might have an index.html from GitHub, otherwise an empty directory. 
+
+git branch echo &quot;h1. html README file&quot; &gt; README.textile
+git add . git commit -m &quot;html README added&quot;
+
+# Now push the gh-pages back to GitHub.git push origin gh-pages# Back to the top of your project. 
+
+# Manually push master, run doxygen, and push gh-pages each time.
+cd project
+git push origin master
+doxygen docs/Doxyfile
+cd html
+git push origin gh-pages</code></pre></noscript></div>
+
+<p>An example of such hosting for klMatrix : http://wavescholar.github.com/klMatrixCore/</p>
+
+]]></content>
+  </entry>
+  
+</feed>
