@@ -4,7 +4,7 @@
   <title><![CDATA[Aloidia Analytics]]></title>
   <link href="http://wavescholar.github.io/atom.xml" rel="self"/>
   <link href="http://wavescholar.github.io/"/>
-  <updated>2014-04-21T01:15:19+00:00</updated>
+  <updated>2014-04-21T01:57:54+00:00</updated>
   <id>http://wavescholar.github.io/</id>
   <author>
     <name><![CDATA[Bruce Campbell]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Semi Supervised Learning With Eigenfunctions]]></title>
+    <link href="http://wavescholar.github.io/blog/2014/04/21/semi-supervised-learning-with-eigenfunctions/"/>
+    <updated>2014-04-21T01:43:40+00:00</updated>
+    <id>http://wavescholar.github.io/blog/2014/04/21/semi-supervised-learning-with-eigenfunctions</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Testing MathJax]]></title>
