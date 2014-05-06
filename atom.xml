@@ -4,7 +4,7 @@
   <title><![CDATA[Aloidia Analytics]]></title>
   <link href="http://wavescholar.github.io/atom.xml" rel="self"/>
   <link href="http://wavescholar.github.io/"/>
-  <updated>2014-05-06T22:39:01+00:00</updated>
+  <updated>2014-05-06T22:43:34+00:00</updated>
   <id>http://wavescholar.github.io/</id>
   <author>
     <name><![CDATA[Bruce Campbell]]></name>
@@ -14,20 +14,20 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Testing Galleria]]></title>
-    <link href="http://wavescholar.github.io/blog/2014/05/06/testing-galleria/"/>
-    <updated>2014-05-06T22:00:12+00:00</updated>
-    <id>http://wavescholar.github.io/blog/2014/05/06/testing-galleria</id>
+    <title type="html"><![CDATA[Test]]></title>
+    <link href="http://wavescholar.github.io/blog/2014/05/06/test/"/>
+    <updated>2014-05-06T22:42:37+00:00</updated>
+    <id>http://wavescholar.github.io/blog/2014/05/06/test</id>
     <content type="html"><![CDATA[<div class="galleria">
-<img src="http://wavescholar.github.io/images/test/1.jpg" />
-<img src="http://wavescholar.github.io/images/test/2.jpg" />
-<img src="http://wavescholar.github.io/images/test/3.jpg" />
-</div>
-<script>
-Galleria.loadTheme('/javascripts/themes/classic/galleria.classic.min.js');
-Galleria.run('.galleria');
-</script>
-
+            <img src="http://wavescholar.github.io/images/test/1.jpg" />
+            <img src="http://wavescholar.github.io/images/test/2.jpg" />
+            <img src="http://wavescholar.github.io/images/test/3.jpg" />
+        </div>
+<pre><code>    &lt;script&gt;
+        Galleria.loadTheme('/javascripts/themes/classic/galleria.classic.min.js');
+        Galleria.run('.galleria');
+    &lt;/script&gt;
+</code></pre>
 ]]></content>
   </entry>
   
