@@ -4,7 +4,7 @@
   <title><![CDATA[Aloidia Analytics]]></title>
   <link href="http://wavescholar.github.io/atom.xml" rel="self"/>
   <link href="http://wavescholar.github.io/"/>
-  <updated>2014-05-06T22:14:06+00:00</updated>
+  <updated>2014-05-06T22:19:07+00:00</updated>
   <id>http://wavescholar.github.io/</id>
   <author>
     <name><![CDATA[Bruce Campbell]]></name>
@@ -19,9 +19,9 @@
     <updated>2014-05-06T22:00:12+00:00</updated>
     <id>http://wavescholar.github.io/blog/2014/05/06/testing-galleria</id>
     <content type="html"><![CDATA[<div class="galleria">
-<img src="images/test/1.jpg" />
-<img src="images/test/2.jpg" />
-<img src="images/test/3.jpg" />
+<img src="http://wavescholar.github.io/images/test/1.jpg" />
+<img src="http://wavescholar.github.io/images/test/2.jpg" />
+<img src="http://wavescholar.github.io/images/test/3.jpg" />
 </div>
 <script>
 Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
