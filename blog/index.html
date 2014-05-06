@@ -9,8 +9,8 @@
   <meta name="author" content="Bruce Campbell">
 
   
-  <meta name="description" content=" &lt;body&gt; &lt;script&gt; if (Galleria) { $("body").text('Galleria works') } &lt;/script&gt;
-&lt;/body&gt; ">
+  <meta name="description" content=" Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+Galleria.run('.galleria'); ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +68,16 @@ olark.identify('5707-116-10-7666');/*]]>*/</script><noscript><a href="https://ww
 
 </script>
 <!-- END GOGGLE ANALYTICS-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="galleria/galleria-1.3.4.min.js"></script>
+<style>
+    .galleria{ width: 700px; height: 400px; background: #000 }
+</style>
+
+
+
+
 
   
   <script type="text/javascript">
@@ -155,16 +165,16 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
   </header>
 
 
-  <div class="entry-content"><head>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-        <script src="galleria/galleria-1.3.4.min.js"></script>
-    </head>
-<pre><code>&lt;body&gt;
-    &lt;script&gt;
-        if (Galleria) { $("body").text('Galleria works') }
-    &lt;/script&gt;
-&lt;/body&gt;
-</code></pre>
+  <div class="entry-content"><div class="galleria">
+<img src="images/test/1.jpg" />
+<img src="images/test/2.jpg" />
+<img src="images/test/3.jpg" />
+</div>
+<script>
+Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+Galleria.run('.galleria');
+</script>
+
 </div>
   
   
