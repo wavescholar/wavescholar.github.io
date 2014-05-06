@@ -4,7 +4,7 @@
   <title><![CDATA[Aloidia Analytics]]></title>
   <link href="http://wavescholar.github.io/atom.xml" rel="self"/>
   <link href="http://wavescholar.github.io/"/>
-  <updated>2014-05-06T22:43:34+00:00</updated>
+  <updated>2014-05-06T23:12:12+00:00</updated>
   <id>http://wavescholar.github.io/</id>
   <author>
     <name><![CDATA[Bruce Campbell]]></name>
@@ -18,16 +18,9 @@
     <link href="http://wavescholar.github.io/blog/2014/05/06/test/"/>
     <updated>2014-05-06T22:42:37+00:00</updated>
     <id>http://wavescholar.github.io/blog/2014/05/06/test</id>
-    <content type="html"><![CDATA[<div class="galleria">
-            <img src="http://wavescholar.github.io/images/test/1.jpg" />
-            <img src="http://wavescholar.github.io/images/test/2.jpg" />
-            <img src="http://wavescholar.github.io/images/test/3.jpg" />
-        </div>
-<pre><code>    &lt;script&gt;
-        Galleria.loadTheme('/javascripts/themes/classic/galleria.classic.min.js');
-        Galleria.run('.galleria');
-    &lt;/script&gt;
-</code></pre>
+    <content type="html"><![CDATA[<p><img src="http://wavescholar.github.io/images/test/1.jpg" width="700" height="400" title="ColorSpace1" />
+<img src="http://wavescholar.github.io/images/test/2.jpg" width="700" height="400" title="ColorSpace2" />
+<img src="http://wavescholar.github.io/images/test/3.jpg" width="700" height="400" title="ColorSpace3" /></p>
 ]]></content>
   </entry>
   
