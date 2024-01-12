@@ -1,5 +1,5 @@
-# brucebcampbell.github.io
+# wavescholar.com
 
 Visit my Octopress website here :
 
-http://brucebcampbell.github.io
+http://wavescholar.com

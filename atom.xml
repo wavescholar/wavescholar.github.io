@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Bruce B Campbell]]></title>
-  <link href="http://brucebcampbell.github.io/atom.xml" rel="self"/>
-  <link href="http://brucebcampbell.github.io/"/>
+  <link href="http://wavescholar.com/atom.xml" rel="self"/>
+  <link href="http://wavescholar.com/"/>
   <updated>2015-08-02T18:38:18+00:00</updated>
-  <id>http://brucebcampbell.github.io/</id>
+  <id>http://wavescholar.com/</id>
   <author>
     <name><![CDATA[Bruce Campbell]]></name>
     
@@ -13,39 +13,12 @@
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
-  <entry>
-    <title type="html"><![CDATA[Analytic Learning Theory]]></title>
-    <link href="http://brucebcampbell.github.io/blog/2015/07/27/analytic-learning-theory/"/>
-    <updated>2015-07-27T22:40:08+00:00</updated>
-    <id>http://brucebcampbell.github.io/blog/2015/07/27/analytic-learning-theory</id>
-    <content type="html"><![CDATA[<p>This post introduces the language of analytic learning theory. </p>
 
-<p>Supervised learning in its most abstract setting requires finding a function $f(x)$ given instances ${ (x_i ,f(x_i))}$. Typically ${x_i}$ is an independent and identically distribute (iid) sample from some unknown distribution.  A loss function is a random variable <script type="math/tex">L : Ran(f) \times Ran(f) \rightarrow \mathcal{R}^+</script> defining the cost of misclassification.  The risk associated with a candidate function $f’$ is defined to be the expectation of the loss over the sample space $\Omega$ given that the true functional relationship is $(x,f(x))$</p>
-
-<script type="math/tex; mode=display">R(f') =: E(L(f')) =  \int L( f(\omega), f'(\omega)) d\omega</script>
-
-<p>Statistical learning theory is concerned with assessing the approximations to $f$ given by minimizing the empirical loss associated with a sample ${x_i ,f(x_i)}$.</p>
-
-<p>It’s worth noting that minimization of expected loss is not always the best things to do.  To understand this we must make the distinction between loss and utility.  The St. Petersburg paradox is an example of a random variable $S : \mathcal{N} \rightarrow \mathcal{R+}$ with infinite expectation but limited utility. Let $W(k)$ be the winnings after k plays of from a game with outcome $S$ that pays $2^{i-1}$ with probability $p_i=1/2^i$. The expected payout is given by</p>
-
-<p><script type="math/tex">\lim_{k \rightarrow \infty} W(k)/k =E(S)=\sum\limits_{i=1}^{\infty} p_i 2^{i-1}= \infty</script> 
-The implication for a decision theory based only on expected value is that a rational player would pay an infinite amount of money to play this game. Bernoulli introduced the notion of expected utility which takes into account the fact that a payout of $2^i$ may not have twice the utility of a payout of $2^{i+1}$ when $i$ gets large.  The utility $U$ is a random variable on the sample space representing preferences of an agent.  Loss represents the aversion of an agent to the outcomes of the sample space, $L(\omega)+U(\omega) = \alpha \; \forall \omega \in \Omega$ where $\alpha$ is constant.  Expected loss $R(f’)$ is the risk associated with choosing the approximation $f’$. Restricting the class of functions to consider when minimizing the risk for a candidate approximation to $f$ is a key aspect of classifier design</p>
-
-<p>The most common loss function is the $L^2$ or squared error loss.  This has a number of convenient numerical and statistical properties. Other common loss functions are the $0-1$ loss and the $L^1$  or sparse loss.  There is a vast literature on $L^1$ (sparse) methods in machine learning since one is always interested in a sparse representation of a signal.</p>
-
-<p>Vladimir N. Vapnik. The nature of statistical learning theory, 1995.</p>
-
-<p>Felipe Cucker and Steve Smale. On the mathematical foundations of learning.
-Bulletin of the American Mathematical Society, 39:1 49, 2002.</p>
-
-]]></content>
-  </entry>
-  
   <entry>
     <title type="html"><![CDATA[Support Vector Machines]]></title>
-    <link href="http://brucebcampbell.github.io/blog/2015/05/30/multiclasssvm/"/>
+    <link href="http://wavescholar.com/blog/2015/05/30/multiclasssvm/"/>
     <updated>2015-05-30T23:22:44+00:00</updated>
-    <id>http://brucebcampbell.github.io/blog/2015/05/30/multiclasssvm</id>
+    <id>http://wavescholar.com/blog/2015/05/30/multiclasssvm</id>
     <content type="html"><![CDATA[<p>Below is the class declaration from the multiclass Support Vector Machine implemented in klMatrix.
 This uses the Sequential minimal optimization (SMO) algorithm for solving the quadratic programming (QP) 
 problem that arises during the training of the SVM.  The algorithm implements the work of 
@@ -144,44 +117,6 @@ problem that arises during the training of the SVM.  The algorithm implements th
 
 ]]></content>
   </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Can You Hear the Shape of a Drum - Spectral Geometry]]></title>
-    <link href="http://brucebcampbell.github.io/blog/2014/03/09/CanYouHearTheShapeOfADrum/"/>
-    <updated>2014-03-09T23:44:50+00:00</updated>
-    <id>http://brucebcampbell.github.io/blog/2014/03/09/CanYouHearTheShapeOfADrum</id>
-    <content type="html"><![CDATA[<p>Spectral Geometry concerns itself with the relationships between a geometric structure and the spectra of a differential operator, typically the Laplacian.   Inferring the geometry from the spectra is a type of inverse problem since two non isometric manifolds may share the same spectra.  Going the other way, we encounter isoperimetric inequalities and spectral gap theorems.  “Can One Hear the Shape of a Drum?” was the title of an article  by Mark Kac in the American Mathematical Monthly 1966.   The frequencies at which a drum vibrate depends on its shape.  </p>
-
-<p>The elliptic PDE  <script type="math/tex"> \nabla^2 A + k A = 0</script> tells us the frequencies if we know the shape.</p>
-
-<p>These frequencies are the eigenvalues of the Laplacian in the region.  Can the spectrum of the Laplacian  tell us the shape if we know the frequencies?  Hermann Weyl showed the eigenvalues  of the Laplacian in the compact domain <script type="math/tex">\Omega</script> are distributed according to</p>
-
-<script type="math/tex; mode=display"> N(\lambda) \sim (2 \pi)^{-d) \omega_d \lambda^{\frac{d}{2}} vol(\Omega}</script>
-
-<p>The Laplace Beltrami operator is the generalization of <script type="math/tex">\nabla \circ \nabla = \Delta</script> to <script type="math/tex">\mathcal{M}</script> </p>
-
-<script type="math/tex; mode=display">\Delta f = tr(H(f))</script>
-
-<p>In the exterior calculus we have <script type="math/tex"> \Delta f = d^*d \; f</script>.</p>
-
-<p>The Laplacian of a Gaussian has well known applications in image processing.
-Given <script type="math/tex">f(x,y)</script>, we get a scale space representation when we convolve by</p>
-
-<script type="math/tex; mode=display">g(x,y,t) = \frac{e^{x^2+y^2}}{2 \pi t}</script>
-
-<script type="math/tex; mode=display">L(x,y,t) =g(x,y,t) \ast f(x,y)</script>
-
-<p>Applying <script type="math/tex">\Delta</script> to <script type="math/tex">L(x,y,t)</script> gives response to blobs of extent <script type="math/tex">\sqrt{t}</script></p>
-
-<p>There is a well known connection between diffusion processes and Schrodinger operators;</p>
-
-<script type="math/tex; mode=display"> H = \nabla^2 + V(x) \Phi \in L^2(R^n) </script>
-
-<script type="math/tex; mode=display">H \Phi = E \Phi </script>
-
-<script type="math/tex; mode=display">E = \sigma(H) </script>
-
-]]></content>
-  </entry>
+ 
   
 </feed>

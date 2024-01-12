@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://brucebcampbell.github.io/sitemap.xml 
+Sitemap: http://wavescholar.com/sitemap.xml 
